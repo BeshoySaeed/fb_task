@@ -1,0 +1,19 @@
+table {
+  width: 100%;
+  border-collapse: collapse;
+
+  tr {
+    th, td {
+      border: 1px solid #ddd;
+      padding: 8px;
+      text-align: left;
+    }
+
+    &:nth-child(even) {
+      background-color: #f2f2f2;
+    }
+    &:hover {
+      background-color: #e8e8e8;
+    }
+  }
+}

@@ -1,0 +1,354 @@
+{
+  "issues": [
+    {
+      "id": 1,
+      "title": "Unexpected Error Code 239 Appears During Checkout",
+      "status": "In Progress",
+      "priority": "Low",
+      "assignee": "kkinch0@google.ru"
+    },
+    {
+      "id": 2,
+      "title": "Login Button Not Responsive on Mobile Version",
+      "status": "Done",
+      "priority": "Low",
+      "assignee": "brodrig1@jimdo.com"
+    },
+    {
+      "id": 3,
+      "title": "Search Results Return Incorrect Data After Update",
+      "status": "In Progress",
+      "priority": "High",
+      "assignee": "fstrasse2@usnews.com"
+    },
+    {
+      "id": 4,
+      "title": "Page Loading Timeout After 10 Seconds on Slow Connections",
+      "status": "In Progress",
+      "priority": "Low",
+      "assignee": "rhullett3@sciencedaily.com"
+    },
+    {
+      "id": 5,
+      "title": "Image Upload Feature Fails for Files over 5MB",
+      "status": "Testing",
+      "priority": "Medium",
+      "assignee": "cfealy4@wp.com"
+    },
+    {
+      "id": 6,
+      "title": "Database Query Causes Internal Server Error (500)",
+      "status": "Testing",
+      "priority": "High",
+      "assignee": "sthuillier5@newyorker.com"
+    },
+    {
+      "id": 7,
+      "title": "Text Formatting Lost When Pasting Content",
+      "status": "Done",
+      "priority": "Low",
+      "assignee": "aconaboy6@slate.com"
+    },
+    {
+      "id": 8,
+      "title": "404 Not Found Error on Specific Product Page",
+      "status": "Done",
+      "priority": "Medium",
+      "assignee": "kmunns7@google.fr"
+    },
+    {
+      "id": 9,
+      "title": "JavaScript Conflict Causes Layout Issues",
+      "status": "Done",
+      "priority": "Medium",
+      "assignee": "bjarlmann8@paginegialle.it"
+    },
+    {
+      "id": 10,
+      "title": "Crash After Prolonged Application Use",
+      "status": "In Progress",
+      "priority": "Low",
+      "assignee": "tahrend9@unicef.org"
+    },
+    {
+      "id": 11,
+      "title": "Increased Latency During Peak Traffic Hours",
+      "status": "Testing",
+      "priority": "Low",
+      "assignee": "afilyukova@typepad.com"
+    },
+    {
+      "id": 12,
+      "title": "Slow Load Times for Image-Heavy Pages",
+      "status": "Open",
+      "priority": "Low",
+      "assignee": "blabbatib@microsoft.com"
+    },
+    {
+      "id": 13,
+      "title": "Database Queries Taking Too Long to Execute",
+      "status": "In Progress",
+      "priority": "Low",
+      "assignee": "jfairlemc@boston.com"
+    },
+    {
+      "id": 14,
+      "title": "Intermittent Website Downtime",
+      "status": "In Progress",
+      "priority": "High",
+      "assignee": "abarszczewskid@indiegogo.com"
+    },
+    {
+      "id": 15,
+      "title": "Page Freezes When Large Reports are Generated",
+      "status": "Open",
+      "priority": "Low",
+      "assignee": "aalgeoe@imgur.com"
+    },
+    {
+      "id": 16,
+      "title": "Video Streaming Quality Degrades Unexpectedly",
+      "status": "Testing",
+      "priority": "Low",
+      "assignee": "fvanezisf@mlb.com"
+    },
+    {
+      "id": 17,
+      "title": "Website Rendering Issues on Specific Browsers",
+      "status": "Open",
+      "priority": "High",
+      "assignee": "jwaddiloveg@about.me"
+    },
+    {
+      "id": 18,
+      "title": "API Response Times Inconsistent",
+      "status": "In Progress",
+      "priority": "Low",
+      "assignee": "hruppertzh@nih.gov"
+    },
+    {
+      "id": 19,
+      "title": "Memory Leaks Lead to Application Slowdown",
+      "status": "Done",
+      "priority": "Low",
+      "assignee": "fjellybrandi@goo.ne.jp"
+    },
+    {
+      "id": 20,
+      "title": "Unoptimized Code Results in High CPU Usage",
+      "status": "Open",
+      "priority": "Medium",
+      "assignee": "bcrackj@whitehouse.gov"
+    },
+    {
+      "id": 21,
+      "title": "SQL Injection Attack Possible in Search Form",
+      "status": "Open",
+      "priority": "Low",
+      "assignee": "efrankishk@altervista.org"
+    },
+    {
+      "id": 22,
+      "title": "User Data Exposure Due to Improper Permissions",
+      "status": "Done",
+      "priority": "High",
+      "assignee": "aardernel@ihg.com"
+    },
+    {
+      "id": 23,
+      "title": "Cross-Site Scripting (XSS) Vulnerability Discovered",
+      "status": "Open",
+      "priority": "High",
+      "assignee": "npountainm@princeton.edu"
+    },
+    {
+      "id": 24,
+      "title": "Outdated SSL Certificate Leading to Security Warnings",
+      "status": "In Progress",
+      "priority": "Low",
+      "assignee": "gadcockn@craigslist.org"
+    },
+    {
+      "id": 25,
+      "title": "Session Hijacking Possible Through Cookie Manipulation",
+      "status": "Done",
+      "priority": "Medium",
+      "assignee": "hmacarthuro@usgs.gov"
+    },
+    {
+      "id": 26,
+      "title": "Denial of Service (DoS) Attack Disrupts Service",
+      "status": "Open",
+      "priority": "Medium",
+      "assignee": "cbowellp@google.cn"
+    },
+    {
+      "id": 27,
+      "title": "Weak Password Encryption Protocol in Use",
+      "status": "Done",
+      "priority": "Medium",
+      "assignee": "mstruttq@nba.com"
+    },
+    {
+      "id": 28,
+      "title": "Malware Detected on Company Server",
+      "status": "In Progress",
+      "priority": "High",
+      "assignee": "torrellr@ycombinator.com"
+    },
+    {
+      "id": 29,
+      "title": "Zero-Day Vulnerability Patched by Emergency Update",
+      "status": "In Progress",
+      "priority": "Medium",
+      "assignee": "hjakubowiczs@disqus.com"
+    },
+    {
+      "id": 30,
+      "title": "Phishing Attack Targets Customer Credentials",
+      "status": "Testing",
+      "priority": "Low",
+      "assignee": "eeptont@ebay.co.uk"
+    },
+    {
+      "id": 31,
+      "title": "Hard Drive Failure on Server 3 Causes Data Loss",
+      "status": "Open",
+      "priority": "Low",
+      "assignee": "prattu@jalbum.net"
+    },
+    {
+      "id": 32,
+      "title": "Network Switch Port Malfunction Disrupts Connectivity",
+      "status": "Testing",
+      "priority": "High",
+      "assignee": "tcragellv@boston.com"
+    },
+    {
+      "id": 33,
+      "title": "Faulty RAM Module Causes System Instability",
+      "status": "In Progress",
+      "priority": "Low",
+      "assignee": "cgiacubow@google.de"
+    },
+    {
+      "id": 34,
+      "title": "Overheating in Server Room Leads to Shutdowns",
+      "status": "Open",
+      "priority": "High",
+      "assignee": "ahutleyx@europa.eu"
+    },
+    {
+      "id": 35,
+      "title": "Power Supply Failure in Workstation",
+      "status": "In Progress",
+      "priority": "Medium",
+      "assignee": "mbloxlandy@example.com"
+    },
+    {
+      "id": 36,
+      "title": "Intermittent Monitor Flickering",
+      "status": "Done",
+      "priority": "Medium",
+      "assignee": "cskrzynskiz@theguardian.com"
+    },
+    {
+      "id": 37,
+      "title": "Printer Paper Jam Errors",
+      "status": "Open",
+      "priority": "Low",
+      "assignee": "rcircuitt10@whitehouse.gov"
+    },
+    {
+      "id": 38,
+      "title": "Defective Network Cable Leads to Connection Drops",
+      "status": "Open",
+      "priority": "High",
+      "assignee": "rorringe11@rakuten.co.jp"
+    },
+    {
+      "id": 39,
+      "title": "Backup Drive Failure",
+      "status": "Done",
+      "priority": "Low",
+      "assignee": "ashillito12@time.com"
+    },
+    {
+      "id": 40,
+      "title": "Router Configuration Error",
+      "status": "Testing",
+      "priority": "Medium",
+      "assignee": "klurcock13@tripadvisor.com"
+    },
+    {
+      "id": 41,
+      "title": "Incorrect File Permissions Prevent Data Access",
+      "status": "Done",
+      "priority": "High",
+      "assignee": "rlalley14@hubpages.com"
+    },
+    {
+      "id": 42,
+      "title": "User Accidentally Deletes Critical Files",
+      "status": "Done",
+      "priority": "High",
+      "assignee": "smuat15@cocolog-nifty.com"
+    },
+    {
+      "id": 43,
+      "title": "Misconfigured Email Settings Lead to Undelivered Messages",
+      "status": "Testing",
+      "priority": "Medium",
+      "assignee": "ssayward16@disqus.com"
+    },
+    {
+      "id": 44,
+      "title": "Software Installation Conflicts with Existing Programs",
+      "status": "In Progress",
+      "priority": "High",
+      "assignee": "jbrownell17@toplist.cz"
+    },
+    {
+      "id": 45,
+      "title": "Outdated Device Drivers Cause Compatibility Problems",
+      "status": "Open",
+      "priority": "Medium",
+      "assignee": "jsangar18@imageshack.us"
+    },
+    {
+      "id": 46,
+      "title": "VPN Connection Issues After Security Update",
+      "status": "Testing",
+      "priority": "High",
+      "assignee": "croundtree19@imdb.com"
+    },
+    {
+      "id": 47,
+      "title": "Incorrect Timezone Setting Leads to Scheduling Errors",
+      "status": "Testing",
+      "priority": "High",
+      "assignee": "fmerryfield1a@behance.net"
+    },
+    {
+      "id": 48,
+      "title": "Firewall Blocking Legitimate Application Traffic",
+      "status": "Testing",
+      "priority": "Low",
+      "assignee": "rrouth1b@wikispaces.com"
+    },
+    {
+      "id": 49,
+      "title": "Account Lockout Due to Multiple Failed Login Attempts",
+      "status": "Testing",
+      "priority": "High",
+      "assignee": "cmcmorran1c@nifty.com"
+    },
+    {
+      "id": 50,
+      "title": "Data Corruption Due to Improper File Handling",
+      "status": "Open",
+      "priority": "Low",
+      "assignee": "msclanders1d@free.fr"
+    }
+  ]
+}
