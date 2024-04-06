@@ -1,0 +1,165 @@
+<div class="issue-list">
+  <div class="issue-modifications-table">
+    <button class="add-issue" (click)="showAddIssueDialog()">
+      <fa-icon [icon]="plusIcon"></fa-icon> Add
+    </button>
+    <div class="filter-controls">
+      <!-- filter & visibility -->
+      <div class="filter-field">
+        <input
+          type="text"
+          pInputText
+          [(ngModel)]="titleFieldValue"
+          placeholder="Title"
+          class="nested-input"
+        />
+        <p-dropdown
+          id="status"
+          [options]="['All'].concat(availableStatuses)"
+          placeholder="Status"
+          [(ngModel)]="statusFieldValue"
+          class="nested-input"
+        ></p-dropdown>
+
+        <!-- Field Visibility -->
+        <div class="visibilities">
+          @for(column of columns; track column.key) {
+          <p-toggleButton
+            [(ngModel)]="column.visible"
+            [onLabel]="column.label"
+            [offLabel]="column.label"
+            class="p-toggleButto"
+          ></p-toggleButton>
+          }
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Issues List -->
+
+  <div class="issues-list" *ngIf="checkColumns()">
+    <p-table
+      [value]="[1]"
+      [rows]="5"
+      [tableStyle]="{ 'min-width': '50rem' }"
+      [responsive]="true"
+    >
+      <ng-template pTemplate="header">
+        <tr>
+          @for( column of columns; track column.key) {
+
+          <th *ngIf="column.visible">
+            {{ column.label }}
+          </th>
+          }
+          <th>Actions</th>
+        </tr>
+      </ng-template>
+      <ng-template pTemplate="body" let-customer>
+        @for (issue of sliceIssues() | searchPipe : titleFieldValue :
+        statusFieldValue ; track issue.id) {
+        <tr>
+          @for(column of columns; track column.key) {
+
+          <td *ngIf="column.visible">
+            <div
+              class="wrapper-status"
+              [ngClass]="getStatusClass(column, issue.status)"
+            >
+              {{ getValue(issue, column.key) }}
+            </div>
+          </td>
+          }
+          <td>
+            <div class="actions-icon">
+              <div
+                class="edit-icon icon"
+                (click)="showUpdateIssueDialog(issue)"
+              >
+                <fa-icon [icon]="updateIcon"></fa-icon>
+              </div>
+              <div class="delete-icon icon" (click)="deleteIssue(issue.id)">
+                <fa-icon [icon]="trashIcon"></fa-icon>
+              </div>
+            </div>
+          </td>
+        </tr>
+        }
+      </ng-template>
+    </p-table>
+    <p-paginator
+      (onPageChange)="onPageChange($event)"
+      [first]="first"
+      [rows]="rows"
+      [totalRecords]="totalRecords"
+      [rowsPerPageOptions]="[10, 20, 30]"
+    ></p-paginator>
+  </div>
+</div>
+
+<!-- update or add dialog  -->
+<p-dialog
+  header="{{ updateOrAddIssueModel ? 'Update Issue' : 'Add New Issue' }}"
+  [(visible)]="IssueDialog"
+  [style]="{ width: '50vw' }"
+  (onHide)="onDialogHide()"
+>
+  <form [formGroup]="issueForm" #issue="ngForm" (ngSubmit)="addOrUpdate()">
+    <div class="form-inputs-container">
+      <div class="input-group">
+        <label for="assignee">Assignee</label>
+        <input
+          id="assignee"
+          type="text"
+          pInputText
+          formControlName="assignee"
+        />
+        <div class="errors" *ngIf="!issueForm.get('assignee')?.untouched">
+          <small
+            class="field-error"
+            *ngIf="issueForm.get('assignee')?.errors?.['required']"
+            >Assignee field is required</small
+          >
+          <small
+            class="field-error"
+            *ngIf="issueForm.get('assignee')?.errors?.['email']"
+            >Not a valid Email</small
+          >
+        </div>
+      </div>
+      <div class="input-group">
+        <label for="status">Status</label>
+        <p-dropdown
+          id="status"
+          [options]="availableStatuses"
+          placeholder="Status"
+          formControlName="status"
+        ></p-dropdown>
+      </div>
+      <div class="input-group">
+        <label for="priority">Priority</label>
+        <p-dropdown
+          id="priority"
+          [options]="IssuePriority"
+          placeholder="Priority"
+          formControlName="priority"
+        ></p-dropdown>
+      </div>
+      <div class="input-group">
+        <label for="title">Title</label>
+        <textarea
+          id="title"
+          rows="5"
+          cols="30"
+          pInputTextarea
+          formControlName="title"
+        ></textarea>
+      </div>
+
+      <button class="issue-action-btn">
+        {{ updateOrAddIssueModel ? "Update" : "Add" }}
+      </button>
+    </div>
+  </form>
+</p-dialog>

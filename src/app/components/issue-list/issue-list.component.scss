@@ -1,0 +1,149 @@
+.issue-list {
+  tr {
+    th {
+      font-size: 20px;
+    }
+    &:nth-child(even) {
+      background-color: #f2f2f2;
+    }
+    &:hover {
+      background-color: #e8e8e8;
+    }
+    .actions-icon {
+      display: flex;
+      justify-content: flex-start;
+      .icon {
+        margin-left: 12px;
+        cursor: pointer;
+        transition: 0.3s;
+        &:nth-child(1) {
+          padding: 10px;
+          background-color: rgb(2, 143, 25);
+          color: white;
+          border-radius: 8px;
+          font-size: 18px;
+          border: 1px solid rgb(2, 143, 25);
+        }
+        &:nth-child(2) {
+          padding: 10px;
+          background-color: rgba(204, 0, 0, 0.8);
+          color: white;
+          border-radius: 8px;
+          font-size: 18px;
+          border: 1px solid rgba(204, 0, 0, 0.8);
+        }
+        &:nth-child(1):hover {
+          background-color: transparent;
+          color: rgb(2, 143, 25);
+          border: 1px solid rgb(2, 143, 25);
+        }
+        &:nth-child(2):hover {
+          background-color: transparent;
+          color: rgba(204, 0, 0, 0.8);
+          border: 1px solid rgba(204, 0, 0, 0.8);
+        }
+      }
+    }
+  }
+  .add-issue {
+    padding: 15px 25px;
+    background-color: #3b75f5;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    transition: 0.3s;
+    font-size: 18px;
+    cursor: pointer;
+    border: 1px solid #5384ec;
+    font-weight: bold;
+    &:hover {
+      background-color: white;
+      border: 1px solid #5384ec;
+      color: #3b75f5;
+      font-weight: bold;
+    }
+  }
+  .issue-modifications-table {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 40px 0;
+    .filter-field {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      .nested-input {
+        margin-right: 10px;
+      }
+      .visibilities {
+        display: flex;
+        .p-toggleButto {
+          margin-right: 10px;
+        }
+      }
+    }
+  }
+}
+
+.form-inputs-container {
+  display: flex;
+
+  flex-direction: column;
+
+  .input-group {
+    label {
+      display: block;
+      margin-bottom: 10px;
+      margin-top: 5px;
+    }
+  }
+  .issue-action-btn {
+    width: fit-content;
+    align-self: flex-end;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 6px;
+    background-color: rgb(55, 55, 165);
+    transition: 0.3s;
+    cursor: pointer;
+    &:hover {
+      background-color: rgb(91, 91, 231);
+    }
+  }
+}
+
+// status coloring
+
+.wrapper-status {
+  width: fit-content;
+}
+
+.testing,
+.inProgress,
+.open,
+.done {
+  color: white;
+  padding: 10px 20px;
+  border-radius: 6px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+.testing {
+  background-color: rgba(0, 119, 255, 0.7);
+}
+.inProgress {
+  background-color: rgba(230, 146, 37, 0.652);
+}
+.open {
+  background-color: rgba(236, 93, 93, 0.7);
+}
+.done {
+  background-color: rgba(42, 136, 1, 0.6);
+}
+
+// errors
+.field-error {
+  color: red;
+}
